@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ProviderTwo
+Bundle-SymbolicName: ProviderTwo
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.example.provider2.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: com.example.service,
+ org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
