@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Circle
+Bundle-SymbolicName: com.seenu.shape.circle
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: SEENU
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: com.seenu.shape
+Export-Package: com.seenu.shape.circle
