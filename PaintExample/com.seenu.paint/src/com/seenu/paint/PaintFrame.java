@@ -6,9 +6,6 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.swing.*;
 import com.seenu.shape.SimpleShape;
-import com.seenu.shape.circle.Circle;
-import com.seenu.shape.square.Square;
-import com.seenu.shape.triangle.Triangle;
 
 /**
  * This class represents the main application class, which is a JFrame subclass
@@ -209,28 +206,5 @@ public class PaintFrame extends JFrame implements MouseListener, MouseMotionList
     public void actionPerformed(ActionEvent evt) {
       selectShape(evt.getActionCommand());
     }
-  }
-
-  /**
-   * This method actually performs the creation of the application window. It is
-   * intended to be called by the Swing event thread and should not be called
-   * directly.
-   **/
-  public static void main(String[] args) throws Exception {
-    SwingUtilities.invokeAndWait(new Runnable() {
-      public void run() {
-        PaintFrame frame = new PaintFrame();
-        frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
-        frame.addWindowListener(new WindowAdapter() {
-          public void windowClosing(WindowEvent evt) {
-            System.exit(0);
-          }
-        });
-        frame.addShape(new Circle());
-        frame.addShape(new Square());
-        frame.addShape(new Triangle());
-        frame.setVisible(true);
-      }
-    });
   }
 }
